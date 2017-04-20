@@ -15,14 +15,14 @@ SimpleConfig.for :application do
   set :base_url, 'localhost:3000'
   set :single_process_mode, true
 
-  set :currency, '.00 €'
-  set :fuel_consumption, 0.12
-  set :fuel_currency, '€'
+  set :currency, '.00 $'
+  set :fuel_consumption, 0. 12
+  set :fuel_currency, '$'
 
   set :costs_calculation_service_link, 'http://servizi.aci.it/CKInternet/'
 
   set :google_analytics_id, nil
-  set :google_maps_api_key, nil
+  set :google_maps_api_key, ENV['GOOGLE_MAPS_API_KEY']
 
   set :user_image_placeholder, 'https://fbstatic-a.akamaihd.net/rsrc.php/v2/yo/r/UlIqmHJn-SK.gif'
 
