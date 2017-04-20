@@ -22,7 +22,7 @@ SimpleConfig.for :application do
   set :costs_calculation_service_link, 'http://servizi.aci.it/CKInternet/'
 
   set :google_analytics_id, nil
-  set :google_maps_api_key, ENV['GOOGLE_MAPS_API_KEY']
+  set :google_maps_api_key, nil
 
   set :user_image_placeholder, 'https://fbstatic-a.akamaihd.net/rsrc.php/v2/yo/r/UlIqmHJn-SK.gif'
 
