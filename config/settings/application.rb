@@ -30,7 +30,7 @@ SimpleConfig.for :application do
     set :namespace, 'FACEBOOK_NAMESPACE'
     set :app_id, 'FACEBOOK_APP_ID'
     set :secret, 'FACEBOOK_SECRET'
-    set :scope, 'public_profile, publish_actions, user_birthday, user_about_me, user_email'
+    set :scope, 'public_profile, publish_actions, user_birthday, user_about_me'
     set :cache_expiry_time, 7.days
   end
 
