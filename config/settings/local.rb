@@ -7,6 +7,6 @@ SimpleConfig.for :application do
     set :app_id, '1474980519208296'
     set :secret, '058a9d7bdd5d996d77cf4702f4fd5498'
   group :maps do
-    set :api_key, 'AIzaSyDkfjT_ASbNxWX9nHs53s8eA138XJ5hlSQ'
+    set :google_maps_api_key, 'AIzaSyDkfjT_ASbNxWX9nHs53s8eA138XJ5hlSQ'
   end
 end
