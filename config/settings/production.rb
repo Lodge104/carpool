@@ -23,17 +23,17 @@ SimpleConfig.for :application do
   end
 
   group :mailer do
-    set :from, '"Icare" <no-reply@i.care>'
-    set :host, 'heroku.com'
+    set :from, '"Occoneechee Lodge Registration" <registration@lodge104.com>'
+    set :host, 'lodge104.com'
 
     group :smtp_settings do
-      set :address, 'smtp.sendgrid.net'
-      set :port, 587
+      set :address, 'ssl://smtp.gmail.com'
+      set :port, 465
       set :authentication, :plain
-      set :domain, 'heroku.com'
+      set :domain, 'lodge104.com'
 
-      set :user_name, ENV['SENDGRID_USERNAME']
-      set :password, ENV['SENDGRID_PASSWORD']
+      set :user_name, ENV['SMTP_USERNAME']
+      set :password, ENV['SMTP_PASSWORD']
     end
   end
 
